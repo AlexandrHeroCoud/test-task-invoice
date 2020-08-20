@@ -1,0 +1,19 @@
+{
+  "posts": [{
+    "id": 1,
+    "header":"Hi, i am first post!",
+    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
+  },{
+    "id": 2,
+    "header":"Hi, i am two post!",
+    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
+  },{
+    "id": 3,
+    "header":"Hi, i am three post!",
+    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
+  },{
+    "id": 4,
+    "header":"Hi, i am four post!",
+    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
+  }]
+}
