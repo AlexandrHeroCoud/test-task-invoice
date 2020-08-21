@@ -23,5 +23,15 @@ export const localStorageAPI = {
             avatar: localStorage.getItem('avatar_url'),
             isAuth: localStorage.getItem('isAuth')
         }
+    },
+    /**
+     * @function clearUser()
+     * @description clear localStorage of user data
+     * **/
+    clearUser: () =>{
+        localStorage.removeItem('login');
+        localStorage.removeItem('avatar_url');
+        localStorage.removeItem('isAuth');
     }
+
 }

@@ -2,9 +2,11 @@ import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import AuthReducer from "./Reducers/AuthReducer"
 import thunkMiddleware from 'redux-thunk'
 import { reducer as formReducer } from 'redux-form'
+import NavBarReducer from "./Reducers/NavBarReducer";
 
 let reducers = combineReducers({
     AuthReducer: AuthReducer,
+    NavBarReducer: NavBarReducer,
     form: formReducer,
 })
 

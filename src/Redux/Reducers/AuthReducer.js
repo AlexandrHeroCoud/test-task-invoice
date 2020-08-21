@@ -65,7 +65,13 @@ export const logIn = (data) =>async (dispatch) => {
         dispatch(setError(response.message, true))
     }
 }
-
+/**
+ * @function logOut()
+ * **/
+export const logOut = () => (dispatch) => {
+    dispatch(setUserData({login:null,avatar: null,isAuth: false,}))
+    localStorageAPI.clearUser()
+}
 /**
  * @function setUser()
  * @param {Object} data

@@ -7,6 +7,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import {Container} from "@material-ui/core";
 import {localStorageAPI} from "./utils/localStorage/localStorage";
 import {setUser} from "./Redux/Reducers/AuthReducer";
+import Page404 from "./Components/Page404/Page404";
 
 function App(props) {
     const [isAuth, setAuth] = useState(props.isAuth);
@@ -23,20 +24,26 @@ function App(props) {
             props.setUser(localStorageAPI.getUser())
         }
     }
-    return (<Container>
+    return (<>
             {isAuth ? <>
-                    <NavBar/>
-                    <Route exact path="/login">
-                        <Redirect to="/terminals" />
+                        <NavBar/>
+                        <Route exact path="/login">
+                            <Redirect to="/terminals" />
+                        </Route>
+                        <Route path="/terminals"/>
+                        <Route path="/buyers"/>
+                        <Route path="/buyers/:id?"/>
+                        <Route path="*" render={() => <Page404 />}/>
+                    </>
+                    : <>
+                    <Route exact path="/">
+                        <Redirect to="/login" />
                     </Route>
-
-                    <Route path="/terminals"/>
-                    <Route path="/buyers"/>
-                    <Route path="/buyers/:id?"/>
-                </>
-                : <Route path="/login" render={() => <Login/>}/>
+                        <Route path="/login" render={() => <Login/>}/>
+                        <Route path="*" render={() => <Page404 />}/>
+                        </>
             }
-        </Container>
+        </>
 
     );
 }
