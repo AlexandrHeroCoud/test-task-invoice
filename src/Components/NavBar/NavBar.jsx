@@ -36,7 +36,7 @@ const NavBar = (props) => {
                     <Button onClick={props.logOut} color="inherit">Log Out</Button>
                 </Toolbar>
             </AppBar>
-            <NavigationDrawer links={props.links} anchor={anchor} toggleDrawer={toggleDrawer} open={open[anchor]}/>
+            <NavigationDrawer avatarUrl={props.avatarUrl} links={props.links} anchor={anchor} toggleDrawer={toggleDrawer} open={open[anchor]}/>
         </div>
     );
 }
@@ -44,6 +44,7 @@ const mapState = (state) =>({
     links: state.NavBarReducer.pages,
     login: state.AuthReducer.login,
     isAuth: state.AuthReducer.isAuth,
+    avatarUrl: state.AuthReducer.avatar
 })
 
 export default connect(mapState,{logOut})(NavBar)
