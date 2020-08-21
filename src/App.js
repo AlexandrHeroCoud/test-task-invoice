@@ -37,7 +37,7 @@ function App(props) {
                         <Route path="*" render={() => <Page404 />}/>
                     </>
                     : <>
-                    <Route exact path="/">
+                    <Route exact path="*">
                         <Redirect to="/login" />
                     </Route>
                         <Route path="/login" render={() => <Login/>}/>

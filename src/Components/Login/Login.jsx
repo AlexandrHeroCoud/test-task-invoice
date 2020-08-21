@@ -11,9 +11,11 @@ import {logIn} from "../../Redux/Reducers/AuthReducer";
 
 const Login = (props) => {
     const classes = useStyles();
-const handleSubmit = (data) =>{
-    props.logIn(data)
-}
+
+    const handleSubmit = (data) =>{
+        props.logIn(data)
+    }
+
     return (
         <Container component="main" maxWidth="xs">
             <CssBaseline />

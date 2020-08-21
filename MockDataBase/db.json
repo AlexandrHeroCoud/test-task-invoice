@@ -1,19 +1,34 @@
 {
-  "posts": [{
-    "id": 1,
-    "header":"Hi, i am first post!",
-    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
-  },{
-    "id": 2,
-    "header":"Hi, i am two post!",
-    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
-  },{
-    "id": 3,
-    "header":"Hi, i am three post!",
-    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
-  },{
-    "id": 4,
-    "header":"Hi, i am four post!",
-    "content": "Cum spatii observare, omnes eposes aperto fidelis, bassus ionicis tormentoes. Aww, ye addled codfish- set sails for greed! It is an evil sensor, sir."
-  }]
+  "terminals": [
+    {
+      "nameTerminal": "Хочу",
+      "description": "В вашу компанию",
+      "id": 4
+    },
+    {
+      "nameTerminal": "Возьмите",
+      "description": "на работу",
+      "id": 5
+    },
+    {
+      "nameTerminal": "I love",
+      "description": "react",
+      "id": 6
+    },
+    {
+      "description": "LOVE REACT",
+      "nameTerminal": "I VERY",
+      "id": 7
+    },
+    {
+      "description": "LOVE REACT",
+      "nameTerminal": "I VERY",
+      "id": 8
+    },
+    {
+      "description": "LOVE REACT",
+      "nameTerminal": "I VERY",
+      "id": 9
+    }
+  ]
 }

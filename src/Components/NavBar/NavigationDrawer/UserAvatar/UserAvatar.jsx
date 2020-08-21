@@ -1,9 +1,12 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
+import Grid from "@material-ui/core/Grid";
 
 const UserAvatar = (props) =>{
     return (
-        <Avatar alt="Remy Sharp" src={`${props.avatarUrl}`} />
-    )
+        <Grid container justify={'center'}>
+            <Avatar src={`${props.avatarUrl}`} />
+        </Grid>
+        )
 }
 export default UserAvatar

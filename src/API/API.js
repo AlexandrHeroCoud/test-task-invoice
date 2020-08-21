@@ -1,4 +1,4 @@
-import * as axios from "axios";
+import axios from "axios";
 import config from '../config.js'
 const client = axios.create({
     baseURL: config.api.baseUrl,
@@ -9,7 +9,33 @@ const client = axios.create({
 })
 
 export const userAPI = {
+    /**
+     * @function getUser()
+     * @param {String} login
+     * @description request on githubAPI
+     * **/
     getUser: (login)=>{
-        return client.get(`/users/${login}`)
+        return axios(`https://api.github.com/users/${login}`)
     },
+}
+
+export const terminalsAPI = {
+    getRows: ()=>{
+        return client.get("/terminals")
+    },
+
+    /**
+     * @function deleteRow()
+     * @param {Number} id
+     * **/
+    deleteRow: (id)=>{
+        return client.delete(`/terminals/${id}`)
+    },
+    /**
+     * @function addRow()
+     * @param {Object} data
+     * **/
+    addRow: (data)=>{
+        return client.post(`/terminals`,data)
+    }
 }

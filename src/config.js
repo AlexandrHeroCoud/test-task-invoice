@@ -1,5 +1,6 @@
 export default {
   "api": {
-    "baseUrl": "https://api.github.com/"
+    "baseUrl": " http://localhost:3001",
+    "githubApi": "https://api.github.com"
   }
 }

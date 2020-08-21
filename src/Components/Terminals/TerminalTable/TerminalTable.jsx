@@ -1,5 +1,4 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {useEffect, useState} from 'react';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -9,23 +8,21 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import useStyles from "./TerminalTableStyles";
 import {Container} from "@material-ui/core";
+import TerminalRow from "./TerminalRow/TerminalRow";
+import {connect} from "react-redux";
+import {deleteRow} from "../../../Redux/Reducers/TerminalsReducer";
 
 
-function createData(name, description) {
-    return { name, description };
-}
-
-const rows = [
-    createData('Frozen yoghurt', 159, ),
-    createData('Ice cream sandwich', 237, ),
-    createData('Eclair', 262, ),
-    createData('Cupcake', 305, ),
-    createData('Gingerbread', 356, ),
-];
-
-export default function TerminalTable() {
+const TerminalTable=(props)=> {
     const classes = useStyles();
+    const [rows,setRows] = useState(props.rows)
 
+    useEffect(()=>{
+        setRows(props.rows)
+    })
+    const handleDelete = (id) =>{
+        props.deleteRow(id)
+    }
     return (
         <Container>
         <TableContainer component={Paper}>
@@ -34,16 +31,12 @@ export default function TerminalTable() {
                     <TableRow>
                         <TableCell>Name</TableCell>
                         <TableCell align="left">Description</TableCell>
+                        <TableCell align="center">Action</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <TableRow key={row.name}>
-                            <TableCell component="th" scope="row">
-                                {row.name}
-                            </TableCell>
-                            <TableCell align="left">{row.description}</TableCell>
-                        </TableRow>
+                        <TerminalRow key={row.id} id={row.id} nameTerminal={row.nameTerminal} description={row.description} handleDelete={handleDelete}/>
                     ))}
                 </TableBody>
             </Table>
@@ -51,3 +44,7 @@ export default function TerminalTable() {
         </Container>
     );
 }
+const mapState = (state)=>({
+    rows: state.TerminalsReducer.rows
+})
+export default connect(mapState, {deleteRow})(TerminalTable)
