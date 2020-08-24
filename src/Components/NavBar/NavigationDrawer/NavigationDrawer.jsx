@@ -23,7 +23,7 @@ const NavigationDrawer =(props)=> {
                             <Grid item xs={12}>
                                 <List>
                                     {props.links.map((url) => (
-                                        <Link to={url}>
+                                        <Link to={`/${url}`}>
                                             <LinkMaterial to={url}>
                                                 <ListItem button key={url}>
                                                         <ListItemIcon><DirectionsRunIcon fontSize={'small'}/></ListItemIcon>
