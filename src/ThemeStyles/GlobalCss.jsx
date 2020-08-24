@@ -5,8 +5,13 @@ export const GlobalCss = withStyles({
         '.MuiButton-root': {
             fontSize: '1rem',
         },
-        '.MuiPaper-root':{
-
+        '.MuiTypography-h1':{
+            fontSize:'3rem',
+            color:'#0277bd'
         },
+        '.MuiTooltip-tooltip':{
+            padding: '5px',
+            fontSize: '0.8rem'
+        }
     },
 })(() => null);

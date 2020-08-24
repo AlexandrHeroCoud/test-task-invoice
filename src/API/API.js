@@ -39,3 +39,8 @@ export const terminalsAPI = {
         return client.post(`/terminals`,data)
     }
 }
+export const BuyersAPI = {
+    getRows: ()=>{
+        return client.get("/buyers")
+    }
+}

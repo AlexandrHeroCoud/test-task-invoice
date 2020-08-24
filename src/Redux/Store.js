@@ -4,11 +4,13 @@ import thunkMiddleware from 'redux-thunk'
 import { reducer as formReducer } from 'redux-form'
 import NavBarReducer from "./Reducers/NavBarReducer";
 import TerminalsReducer from "./Reducers/TerminalsReducer";
+import BuyersReducer from "./Reducers/BuyersReducer";
 
 let reducers = combineReducers({
     AuthReducer: AuthReducer,
     NavBarReducer: NavBarReducer,
-    TerminalsReducer:TerminalsReducer,
+    TerminalsReducer: TerminalsReducer,
+    BuyersReducer: BuyersReducer,
     form: formReducer,
 })
 

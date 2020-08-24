@@ -9,6 +9,7 @@ import {localStorageAPI} from "./utils/localStorage/localStorage";
 import {setUser} from "./Redux/Reducers/AuthReducer";
 import Page404 from "./Components/Page404/Page404";
 import Terminals from "./Components/Terminals/Terminals";
+import Buyers from "./Components/Buyers/Buyers";
 
 function App(props) {
     const [isAuth, setAuth] = useState(props.isAuth);
@@ -29,10 +30,10 @@ function App(props) {
             {isAuth ? <>
                         <NavBar/>
                         <Route exact path="/login">
-                            <Redirect to="/terminals" />
+                            <Redirect to="/buyers" />
                         </Route>
                         <Route path="/terminals"render={() => <Terminals />}/>
-                        <Route path="/buyers"/>
+                        <Route path="/buyers" render={() => <Buyers />}/>
                         <Route path="/buyers/:id?" render={() => <Page404 />}/>
                         <Route path="*" render={() => <Page404 />}/>
                     </>

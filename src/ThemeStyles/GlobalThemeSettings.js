@@ -9,9 +9,4 @@ export const globalThemeSettings = createMuiTheme({
             },
         },
     },
-    props: {
-        MuiButtonBase: {
-            disableRipple: false,
-        },
-    },
 });
