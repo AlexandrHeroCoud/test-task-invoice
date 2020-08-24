@@ -1,11 +1,24 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container} from "@material-ui/core";
+import {getBuyer} from "../../Redux/Reducers/BuyerReducer";
+import {connect} from "react-redux";
+import BuyerCard from "./BuyerCard/BuyerCard";
+import {useParams} from 'react-router-dom';
+
 
 const Buyer = (props) =>{
+    let param = useParams();
+    useEffect(()=>{
+        const id = param.id
+        props.getBuyer(id)
+    })
     return (
         <Container>
-            <h1>asdasdasd</h1>
+            <BuyerCard data={props.state}/>
         </Container>
     )
 }
-export default Buyer
+const mapState = (state)=>({
+})
+export default connect(mapState,{getBuyer})(Buyer)
+

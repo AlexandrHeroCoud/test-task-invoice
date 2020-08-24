@@ -5,12 +5,14 @@ import { reducer as formReducer } from 'redux-form'
 import NavBarReducer from "./Reducers/NavBarReducer";
 import TerminalsReducer from "./Reducers/TerminalsReducer";
 import BuyersReducer from "./Reducers/BuyersReducer";
+import BuyerReducer from "./Reducers/BuyerReducer";
 
 let reducers = combineReducers({
     AuthReducer: AuthReducer,
     NavBarReducer: NavBarReducer,
     TerminalsReducer: TerminalsReducer,
     BuyersReducer: BuyersReducer,
+    BuyerReducer:BuyerReducer,
     form: formReducer,
 })
 

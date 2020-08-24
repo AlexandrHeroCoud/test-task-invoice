@@ -95,7 +95,8 @@
           "averCheck": 3453,
           "countBue": 53,
           "totalTake": 50001
-        },{
+        },
+        {
           "id": 6,
           "nameBuyer": "Jordan Valke",
           "averCheck": 45458,
@@ -129,7 +130,8 @@
           "averCheck": 3453,
           "countBue": 21,
           "totalTake": 50003
-        },{
+        },
+        {
           "id": 11,
           "nameBuyer": "Sergey Esenin",
           "averCheck": 4545,
@@ -163,7 +165,8 @@
           "averCheck": 3453,
           "countBue": 20,
           "totalTake": 50000
-        },{
+        },
+        {
           "id": 16,
           "nameBuyer": "Andrey Safronov",
           "averCheck": 45458,
@@ -197,7 +200,8 @@
           "averCheck": 3453,
           "countBue": 12,
           "totalTake": 50006
-        },{
+        },
+        {
           "id": 21,
           "nameBuyer": "Mikhail Bulgakov",
           "averCheck": 45458,
@@ -234,5 +238,182 @@
         }
       ]
     }
-  }
+  },
+  "buyer": [
+    {
+      "id": 1,
+      "nameBuyer": "Robert Martin",
+      "averCheck": 45458,
+      "countBue": 76,
+      "totalTake": 651651
+    },
+    {
+      "id": 2,
+      "nameBuyer": "Yuriy Gagarin",
+      "averCheck": 1236,
+      "countBue": 13,
+      "totalTake": 25000
+    },
+    {
+      "id": 3,
+      "nameBuyer": "Elon Mask",
+      "averCheck": 1232,
+      "countBue": 67,
+      "totalTake": 25000
+    },
+    {
+      "id": 4,
+      "nameBuyer": "Bill Gates",
+      "averCheck": 464,
+      "countBue": 9,
+      "totalTake": 11112
+    },
+    {
+      "id": 5,
+      "nameBuyer": "Robert Martin",
+      "averCheck": 3453,
+      "countBue": 53,
+      "totalTake": 50001
+    },
+    {
+      "id": 6,
+      "nameBuyer": "Jordan Valke",
+      "averCheck": 45458,
+      "countBue": 1,
+      "totalTake": 651651
+    },
+    {
+      "id": 7,
+      "nameBuyer": "Robert Martin",
+      "averCheck": 1543,
+      "countBue": 98,
+      "totalTake": 245698
+    },
+    {
+      "id": 8,
+      "nameBuyer": "Uncle Ben",
+      "averCheck": 2134,
+      "countBue": 99,
+      "totalTake": 67809
+    },
+    {
+      "id": 9,
+      "nameBuyer": "Lev Tolstoy",
+      "averCheck": 465,
+      "countBue": 10,
+      "totalTake": 11113
+    },
+    {
+      "id": 10,
+      "nameBuyer": "Iosiv Brodsky",
+      "averCheck": 3453,
+      "countBue": 21,
+      "totalTake": 50003
+    },
+    {
+      "id": 11,
+      "nameBuyer": "Sergey Esenin",
+      "averCheck": 4545,
+      "countBue": 2,
+      "totalTake": 45555
+    },
+    {
+      "id": 12,
+      "nameBuyer": "Omar Haiyam",
+      "averCheck": 1233,
+      "countBue": 13,
+      "totalTake": 25003
+    },
+    {
+      "id": 13,
+      "nameBuyer": "Yuriy Gagarin",
+      "averCheck": 1231,
+      "countBue": 10,
+      "totalTake": 25006
+    },
+    {
+      "id": 14,
+      "nameBuyer": "Vitaliy Kolabanov",
+      "averCheck": 466,
+      "countBue": 8,
+      "totalTake": 11111
+    },
+    {
+      "id": 15,
+      "nameBuyer": "Alexandr Pushkin",
+      "averCheck": 3453,
+      "countBue": 20,
+      "totalTake": 50000
+    },
+    {
+      "id": 16,
+      "nameBuyer": "Andrey Safronov",
+      "averCheck": 45458,
+      "countBue": 19,
+      "totalTake": 651651
+    },
+    {
+      "id": 17,
+      "nameBuyer": "Nikola Tesla",
+      "averCheck": 1237,
+      "countBue": 13,
+      "totalTake": 25000
+    },
+    {
+      "id": 18,
+      "nameBuyer": "Elon Mask",
+      "averCheck": 1238,
+      "countBue": 45,
+      "totalTake": 25000
+    },
+    {
+      "id": 19,
+      "nameBuyer": "Berlioz",
+      "averCheck": 462,
+      "countBue": 11,
+      "totalTake": 11117
+    },
+    {
+      "id": 20,
+      "nameBuyer": "Ivan Bezdomnyi",
+      "averCheck": 3453,
+      "countBue": 12,
+      "totalTake": 50006
+    },
+    {
+      "id": 21,
+      "nameBuyer": "Mikhail Bulgakov",
+      "averCheck": 45458,
+      "countBue": 18,
+      "totalTake": 651680
+    },
+    {
+      "id": 22,
+      "nameBuyer": "Mark Zuckerberg",
+      "averCheck": 1236,
+      "countBue": 155,
+      "totalTake": 25000
+    },
+    {
+      "id": 23,
+      "nameBuyer": "Elon Mask",
+      "averCheck": 1242,
+      "countBue": 50,
+      "totalTake": 25000
+    },
+    {
+      "id": 24,
+      "nameBuyer": "Bill Gates",
+      "averCheck": 461,
+      "countBue": 3,
+      "totalTake": 11121
+    },
+    {
+      "id": 25,
+      "nameBuyer": "Jack Sparrow",
+      "averCheck": 3453,
+      "countBue": 17,
+      "totalTake": 50011
+    }
+  ]
 }

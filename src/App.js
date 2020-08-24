@@ -37,7 +37,9 @@ function App(props) {
                                 <Redirect to="/buyers" />
                             </Route>
                             <Route path="/terminals"render={() => <Terminals />}/>
-                            <Route path="/buyers/:id" render={() => <Buyer/>}/>
+                            <Route path="/buyers/:id" >
+                                <Buyer/>
+                            </Route>
                             <Route path="/buyers" render={() => <Buyers />}/>
                             <Route path="*" render={() => <Page404 />}/>
                         </Switch>

@@ -44,3 +44,13 @@ export const BuyersAPI = {
         return client.get("/buyers")
     }
 }
+export const BuyerIdAPI = {
+    /**
+     * @function getBuyerById()
+     * @param {Number} id
+     * @description server api is not allow realize 'url' from technical task
+     * **/
+    getBuyerById: (id)=>{
+        return client.get(`/buyer/${id}`)
+    }
+}
