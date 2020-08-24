@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+If port is busy set file config.js baseURl current port on mock-api
+
+### `npm run mock-api`
+
+Next
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
